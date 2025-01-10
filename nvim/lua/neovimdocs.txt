@@ -1,0 +1,3 @@
+telescope = use for to find files and in files txt 
+treesitter = use for to syntax highlight and indention
+indent normal mode = select the text ( visual mode ) and type  " = "
