@@ -1,18 +1,15 @@
 return {
   {
-    "hrsh7th/cmp-nvim-lsp"
-  },
-  {
-    "hrsh7th/cmp-buffer"
-  },
-  {
-    "hrsh7th/cmp-path"
+    "hrsh7th/cmp-nvim-lsp",
   },
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "onsails/lspkind.nvim",
     },
   },
   {
@@ -32,19 +29,21 @@ return {
           documentation = cmp.config.window.bordered(),
         },
         mapping = cmp.mapping.preset.insert({
+          ["<C-k>"] = cmp.mapping.select_prev_item(),
+          ["<C-j>"] = cmp.mapping.select_next_item(),
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
-          ["<C-Space>"] = cmp.mapping.complete(),
-          ["<C-e>"] = cmp.mapping.abort(),
+          ["<C-Space>"] = cmp.mapping.complete(), -- show the suggestions
+          ["<C-e>"] = cmp.mapping.abort(),        -- hide the suggestions
           ["<CR>"] = cmp.mapping.confirm({ select = true }),
         }),
         sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
           { name = "buffer" },
           { name = "path" },
-        }, {
-            { name = 'nvim_lsp' },
-            { name = "luasnip" },
-          }),
+        }),
       })
     end,
   },
