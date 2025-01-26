@@ -1,10 +1,37 @@
-## Screenshots
 
-![App Screenshot](https://preview.redd.it/hyprland-first-rice-v0-ppjr8l0x4bbe1.png?width=1080&crop=smart&auto=webp&s=8e159b011c697f2aa32bb1642d6a1e081c3da8cd)
+# 📁 dotfiles
 
-Files that are used to configure the hyprland, starship, nvim, tmux and many more.
+This is configuration of tools I use in day to day life, favourite color theme is catppuccin mocha.
 
-## Authors
+
+## 🍔 List
+ Here is the list of tools I use :
+| Category | Tool |
+| :---:   | :---: |
+| OS | Arch linux |
+| Desktop | Hyprland |
+| Terminal | Ghostty Or kitty ( Wezterm in Windows 11 ) |
+| Shell | Zsh |
+| Editor | Neovim |
+| Shell Prompt | Starship |
+| Multiplexer | Tmux |
+| File Manager | Yazi |
+| Git | Lazygit |
+| Monitoring | Btop |
+| Print File | Bat |
+| List | eza |
+| Change Directory | Zoxide |
+
+    
+## 🎦 Screenshots
+
+![neovim and btop Screenshot](pictures/nvim_btop.png)
+![lazygit, eza and yazi Screenshot](pictures/lazygit_eza_yazi.png)
+![kitty and tmux Screenshot](pictures/kitty_tmux.png)
+![waybar and wofi Screenshot](pictures/waybar_wofi.png)
+
+
+## 🙀 Authors
 
 <div>
   <img src ="https://avatars.githubusercontent.com/u/110894199?v=4" alt = "profile image" style = "width:60px; height:60px; border-radius: 50%; "/>
@@ -12,12 +39,6 @@ Files that are used to configure the hyprland, starship, nvim, tmux and many mor
 
 [@alice](https://www.github.com/alice46878)
 
-### Colors
-
-Recently I discovered the catppuccin theme and I really like it so I mostly use it.
-[My Theme](https://catppuccin.com/palette)
-
-### Related
-
+### Related : 
 Here are more customization ideas
 [reddit](https://www.reddit.com/r/unixporn/).
