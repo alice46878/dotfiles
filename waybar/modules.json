@@ -24,7 +24,7 @@
     }
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}% |",
+    "format": "{icon}  {volume}% ",
     "format-bluetooth": "{icon} {volume}%  {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
@@ -42,19 +42,19 @@
     "on-click": "pavucontrol"
   },
   "network": {
-    "format-wifi": "   {essid} ({signalStrength}%) |",
+    "format-wifi": "󰤨  {signalStrength}% ",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "Disconnected ⚠",
+    "format-disconnected": " 󰤭 ",
     "on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
   },
   "cpu": {
-    "format": "  {usage}% |",
+    "format": "  {usage}% ",
     "tooltip": true
   },
   "memory": {
-    "format": "  {}% |",
+    "format": "  {}% ",
     "tooltip": true
   },
   "temperature": {
@@ -74,7 +74,7 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}  {capacity}% |",
+    "format": "{icon}  {capacity}%",
     "format-full": "{icon}  {capacity}%",
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
@@ -85,7 +85,7 @@
     "bat": "BAT2"
   },
   "clock": {
-    "format": "{:%H:%M | %e %B} ",
+    "format": " {:%I:%M | %e %B} ",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   }
