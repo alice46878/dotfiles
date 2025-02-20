@@ -3,6 +3,7 @@
         "vim"
     ],
     "diagnostics.disable": [
-        "missing-parameter"
+        "missing-parameter",
+        "missing-fields"
     ]
 }

@@ -1,0 +1,21 @@
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[general]
+import = [
+  "C:/Users/anike/AppData/Roaming/alacritty/catppuccin-mocha.toml"
+]
+
+[window]
+decorations = "None"
+opacity = 0.9
+blur = true
+startup_mode = "Fullscreen"
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+size = 12
+
+[terminal]
+shell = { program = "wsl", args = ["-d", "Arch", "--cd", "~"] }

@@ -84,3 +84,6 @@ eval "$(zoxide init zsh)"
 # eza
 alias el="eza --all --long --icons=always"
 alias et="eza --long --tree --level=3 --icons=always"
+
+# golang file path also golangci-lint path
+export PATH=$PATH:/usr/local/go/bin
